@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hill Cipher — Encryption and Decryption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+  <h1>Hill Cipher — Encryption and Decryption</h1>
+
+    <label>Matrix Size</label>
+    <select id="matrixSize">
+      <option value="2">2 × 2</option>
+      <option value="3">3 × 3</option>
+    </select>
+
+    <label>Key (letters)</label>
+    <input id="keyInput" placeholder="e.g. HILL" autocomplete="off">
+
+    <label>Plaintext</label>
+    <textarea id="plaintext" rows="3" placeholder="Enter plaintext (letters only)"></textarea>
+
+    <div class="buttons">
+      <button id="genBtn">Generate Key</button>
+      <button id="encBtn">Encrypt</button>
+      <button id="decBtn">Decrypt</button>
+    </div>
+
+    <h3>Ciphertext</h3>
+    <div id="cipherText" class="output">Ciphertext will appear here</div>
+
+    <h3>Decrypted Plaintext</h3>
+    <div id="plainOut" class="output">Plaintext will appear here</div>
+
+    <h3>Computation Details</h3>
+
+    <div id="details" class="output">Step-by-step details will appear here</div>
+    </div> <!-- .content -->
+  </div> <!-- .container -->
+
+  <!-- attribution removed as requested -->
+
+  <!-- IMPORTANT: this loads the script.js file -->
+  <script src="script.js"></script>
+</body>
+</html>
